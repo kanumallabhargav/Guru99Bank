@@ -3,12 +3,16 @@ package bankAut.Guru99Bank_ext;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
 import resources.parameters;
 
-public class SS1_Login extends Base{
-
-	public static void main(String[] args) throws InterruptedException 
-	{
+public class SS1_Login extends Base
+{
+		@Test
+		public void test1() throws InterruptedException
+		{
 		driver = driverInitialize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		parameters pObject =new parameters();
@@ -26,8 +30,10 @@ public class SS1_Login extends Base{
 			System.out.println("Title doesn't match.");
 			System.out.println("Test Case Failed");
 		}
-		Thread.sleep(2000);
-		driver.quit();
-	}
-
+		}
+		@AfterTest
+		public void at()
+		{
+			driver.quit();
+		}
 }
