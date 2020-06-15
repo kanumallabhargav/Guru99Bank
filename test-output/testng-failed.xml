@@ -6,6 +6,7 @@
     <classes>
       <class name="bankAut.Guru99Bank_ext.SS1_Login">
         <methods>
+          <include name="closeDriverAndClearCookies"/>
           <include name="test1" invocation-numbers="1 2 3"/>
         </methods>
       </class> <!-- bankAut.Guru99Bank_ext.SS1_Login -->
