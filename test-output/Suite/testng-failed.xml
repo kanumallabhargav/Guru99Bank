@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="URL" value="http://www.demo.guru99.com/V4/"/>
+  <test name="TestLoginPage(failed)" parallel="none" preserve-order="true">
+    <classes>
+      <class name="bankAut.Guru99Bank_ext.SS1_Login">
+        <methods>
+          <include name="test1" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- bankAut.Guru99Bank_ext.SS1_Login -->
+    </classes>
+  </test> <!-- TestLoginPage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -4,36 +4,53 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import resources.parameters;
 
 public class SS1_Login extends Base
 {
-		@Test
-		public void test1() throws InterruptedException
+		@Parameters({"URL"})
+		@Test(dataProvider="DataProviderMethod")
+		public void test1(String usrNameFromDataProvider, String passWordFromDataProvider)
 		{
-		driver = driverInitialize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		parameters pObject =new parameters();
-		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys(pObject.uName);
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(pObject.pwd);
-		driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
-		Thread.sleep(1000);
-		if(driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage"))
-		{
-			System.out.println("Title verified.");
-			System.out.println("Test Case Passed");
+			driver = driverInitialize();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			parameters parametersClassObject =new parameters(driver);
+			driver.get(parametersClassObject.url);
+			System.out.println(usrNameFromDataProvider);
+			System.out.println(passWordFromDataProvider);
+			parametersClassObject.findUserNameBox().sendKeys(usrNameFromDataProvider);
+			parametersClassObject.findPasswordBox().sendKeys(passWordFromDataProvider);
+			parametersClassObject.findLoginButton().click();
+			if(driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage"))
+			{
+				System.out.println("Title verified.");
+				System.out.println("Test Case Passed");
+			}
+			else
+			{
+				System.out.println("Title doesn't match.");
+				System.out.println("Test Case Failed");
+			}
+			System.out.println("down the line check");
+			driver.manage().deleteAllCookies();
+			driver.close();
 		}
-		else
+		@DataProvider
+		public Object[][] DataProviderMethod()
 		{
-			System.out.println("Title doesn't match.");
-			System.out.println("Test Case Failed");
-		}
-		}
-		@AfterTest
-		public void at()
-		{
-			driver.quit();
+			Object[][] dataProviderObject = new Object[4][2];
+			dataProviderObject[0][0] = "mngr263563";
+			dataProviderObject[0][1] = "azAmEha";
+			dataProviderObject[1][0] = "INVALID";
+			dataProviderObject[1][1] = "azAmEha";
+			dataProviderObject[2][0] = "mngr263563";
+			dataProviderObject[2][1] = "INVALID";
+			dataProviderObject[3][0] = "INVALID";
+			dataProviderObject[3][1] = "INVALID";
+			return dataProviderObject;
 		}
 }

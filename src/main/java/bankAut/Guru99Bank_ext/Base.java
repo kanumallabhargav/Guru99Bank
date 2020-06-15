@@ -12,8 +12,9 @@ public class Base
 	{
 		System.setProperty("webdriver.gecko.driver", "/Users/bhargavkanmalla/Documents/selenium-java-3.141.59/geckodriver");
 		driver = new FirefoxDriver();
-		parameters pObject = new parameters();
-		driver.get(pObject.url);
+		driver.manage().window().maximize();
+		//parameters pObject = new parameters();
+		//driver.get(pObject.url);
 		return driver;
 	}
 }

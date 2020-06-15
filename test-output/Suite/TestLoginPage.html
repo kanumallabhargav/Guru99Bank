@@ -1,54 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="4" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="66252" started-at="2020-06-15T16:28:53Z" finished-at="2020-06-15T16:29:59Z">
-    <groups>
-    </groups>
-    <test name="TestLoginPage" duration-ms="66252" started-at="2020-06-15T16:28:53Z" finished-at="2020-06-15T16:29:59Z">
-      <class name="bankAut.Guru99Bank_ext.SS1_Login">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@31b7dea0]" name="test1" duration-ms="25816" started-at="2020-06-15T21:58:53Z" data-provider="DataProviderMethod" finished-at="2020-06-15T21:59:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr263563]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[azAmEha]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@31b7dea0]" name="test1" duration-ms="13168" started-at="2020-06-15T21:59:18Z" data-provider="DataProviderMethod" finished-at="2020-06-15T21:59:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[INVALID]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[azAmEha]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+<html>
+<head>
+<title>TestNG:  TestLoginPage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestLoginPage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 15 21:58:53 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>66 seconds (66252 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bankAut.Guru99Bank_ext.SS1_Login.test1()'><b>test1</b><br>Test class: bankAut.Guru99Bank_ext.SS1_Login<br>Parameters: INVALID, azAmEha</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2684, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 32999457-2d12-3542-bb92-fbf7398a20aa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Session ID: 32999457-2d12-3542-bb92-fbf7398a20aa
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:28)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace398457879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace398457879'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2684, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 32999457-2d12-3542-bb92-fbf7398a20aa
@@ -84,38 +129,29 @@ Session ID: 32999457-2d12-3542-bb92-fbf7398a20aa
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@31b7dea0]" name="test1" duration-ms="13591" started-at="2020-06-15T21:59:32Z" data-provider="DataProviderMethod" finished-at="2020-06-15T21:59:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr263563]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[INVALID]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+</pre></div></td>
+<td>13</td>
+<td>bankAut.Guru99Bank_ext.SS1_Login@31b7dea0</td></tr>
+<tr>
+<td title='bankAut.Guru99Bank_ext.SS1_Login.test1()'><b>test1</b><br>Test class: bankAut.Guru99Bank_ext.SS1_Login<br>Parameters: mngr263563, INVALID</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2690, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 96128ccc-2b40-7243-ad6a-89517d5bcec1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Session ID: 96128ccc-2b40-7243-ad6a-89517d5bcec1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:28)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370074462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370074462'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2690, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 96128ccc-2b40-7243-ad6a-89517d5bcec1
@@ -151,38 +187,29 @@ Session ID: 96128ccc-2b40-7243-ad6a-89517d5bcec1
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@31b7dea0]" name="test1" duration-ms="13628" started-at="2020-06-15T21:59:45Z" data-provider="DataProviderMethod" finished-at="2020-06-15T21:59:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[INVALID]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[INVALID]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+</pre></div></td>
+<td>13</td>
+<td>bankAut.Guru99Bank_ext.SS1_Login@31b7dea0</td></tr>
+<tr>
+<td title='bankAut.Guru99Bank_ext.SS1_Login.test1()'><b>test1</b><br>Test class: bankAut.Guru99Bank_ext.SS1_Login<br>Parameters: INVALID, INVALID</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2695, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f16fbf54-92e6-5044-9024-1fcbef637c9b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Session ID: f16fbf54-92e6-5044-9024-1fcbef637c9b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:28)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1667305539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1667305539'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:d9b1:94c8:8c54:8d57%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2695, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: f16fbf54-92e6-5044-9024-1fcbef637c9b
@@ -218,13 +245,22 @@ Session ID: f16fbf54-92e6-5044-9024-1fcbef637c9b
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- bankAut.Guru99Bank_ext.SS1_Login -->
-    </test> <!-- TestLoginPage -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>13</td>
+<td>bankAut.Guru99Bank_ext.SS1_Login@31b7dea0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bankAut.Guru99Bank_ext.SS1_Login.test1()'><b>test1</b><br>Test class: bankAut.Guru99Bank_ext.SS1_Login<br>Parameters: mngr263563, azAmEha</td>
+<td></td>
+<td>25</td>
+<td>bankAut.Guru99Bank_ext.SS1_Login@31b7dea0</td></tr>
+</table><p>
+</body>
+</html>
