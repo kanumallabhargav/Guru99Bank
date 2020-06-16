@@ -9,12 +9,14 @@ public class parameters
 	public WebDriver driver;
 	
 	public String url = "http://www.demo.guru99.com/V4/";
+	public String Title = "Guru99 Bank Manager HomePage";
 	/*public String uName = "mngr263563";
 	public String pwd = "azAmEha";*/
 	
 	private By userNameLocator = By.xpath("//input[@name='uid']");
 	private By passwordLocator = By.xpath("//input[@name='password']");
 	private By loginButtonLocator = By.xpath("//input[@name='btnLogin']");
+	private By verificationLocator = By.linkText("Manager");
 	
 	public parameters(WebDriver driver) 
 	{
@@ -32,5 +34,9 @@ public class parameters
 	public WebElement findLoginButton()
 	{
 		return driver.findElement(loginButtonLocator);
+	}
+	public WebElement findVerification()
+	{
+		return driver.findElement(verificationLocator);
 	}
 }

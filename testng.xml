@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
 <parameter name="URL" value="http://www.demo.guru99.com/V4/"></parameter>
+<listeners>
+<listener class-name = "bankAut.Guru99Bank_ext.Listeners"/>
+</listeners>
   <test name="TestLoginPage">
   <classes>
   <class name="bankAut.Guru99Bank_ext.SS1_Login"></class>

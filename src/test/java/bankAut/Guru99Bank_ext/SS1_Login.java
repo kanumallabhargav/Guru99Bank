@@ -27,24 +27,19 @@ public class SS1_Login extends Base
 			parametersClassObject.findUserNameBox().sendKeys(usrNameFromDataProvider);
 			parametersClassObject.findPasswordBox().sendKeys(passWordFromDataProvider);
 			parametersClassObject.findLoginButton().click();
-			if(driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage"))
+			if(driver.getTitle().equalsIgnoreCase(parametersClassObject.Title))
 			{
 				log.info("Title verified.");
-				log.info("Test Case Passed");
 			}
-			if(driver.findElement(By.linkText("Manager")).isDisplayed())
-			{
+			if(parametersClassObject.findVerification().isDisplayed())
 				log.info("Login Success");
-			}
 			else
-			{
 				log.error("login Failed");
-			}
 		}
 		@DataProvider
 		public Object[][] DataProviderMethod() throws IOException
 		{
-			FileInputStream fis = new FileInputStream("/Users/bhargavkanmalla/Documents/workspace/Guru99Bank_ext/src/main/java/resources/Data.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/Data.properties");
 			Properties prop = new Properties();
 			prop.load(fis);
 			String validUID = prop.getProperty("validUserId");

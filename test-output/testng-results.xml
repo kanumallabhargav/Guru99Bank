@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="94881" started-at="2020-06-15T18:57:12Z" finished-at="2020-06-15T18:58:47Z">
+  <suite name="Suite" duration-ms="69617" started-at="2020-06-16T11:46:11Z" finished-at="2020-06-16T11:47:21Z">
     <groups>
     </groups>
-    <test name="TestLoginPage" duration-ms="94881" started-at="2020-06-15T18:57:12Z" finished-at="2020-06-15T18:58:47Z">
+    <test name="TestLoginPage" duration-ms="69617" started-at="2020-06-16T11:46:11Z" finished-at="2020-06-16T11:47:21Z">
       <class name="bankAut.Guru99Bank_ext.SS1_Login">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@3ac42916]" name="test1" duration-ms="31144" started-at="2020-06-16T00:27:12Z" data-provider="DataProviderMethod" finished-at="2020-06-16T00:27:44Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@17046283]" name="test1" duration-ms="21818" started-at="2020-06-16T17:16:11Z" data-provider="DataProviderMethod" finished-at="2020-06-16T17:16:33Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@3ac42916]" name="test1" duration-ms="20378" started-at="2020-06-16T00:27:44Z" data-provider="DataProviderMethod" finished-at="2020-06-16T00:28:04Z">
+        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@17046283]" name="test1" duration-ms="11711" started-at="2020-06-16T17:16:33Z" data-provider="DataProviderMethod" finished-at="2020-06-16T17:16:45Z">
           <params>
             <param index="0">
               <value>
@@ -40,18 +40,18 @@
             <message>
               <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: '2401:4900:16b9:8acc:a094:b8f8:962f:283%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:79c3:2612:239f:3c7f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5282, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c26b3dcf-844f-394c-aa4a-07dd358b07d7]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6639, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c7f51ac8-18b5-874a-b272-1a896efee692]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: '2401:4900:16b9:8acc:a094:b8f8:962f:283%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:79c3:2612:239f:3c7f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5282, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c26b3dcf-844f-394c-aa4a-07dd358b07d7
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6639, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c7f51ac8-18b5-874a-b272-1a896efee692
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -59,7 +59,7 @@ Session ID: c26b3dcf-844f-394c-aa4a-07dd358b07d7
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:27)
+	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,7 +90,7 @@ Session ID: c26b3dcf-844f-394c-aa4a-07dd358b07d7
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@3ac42916]" name="test1" duration-ms="18180" started-at="2020-06-16T00:28:04Z" data-provider="DataProviderMethod" finished-at="2020-06-16T00:28:22Z">
+        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@17046283]" name="test1" duration-ms="13387" started-at="2020-06-16T17:16:45Z" data-provider="DataProviderMethod" finished-at="2020-06-16T17:16:59Z">
           <params>
             <param index="0">
               <value>
@@ -107,18 +107,18 @@ Session ID: c26b3dcf-844f-394c-aa4a-07dd358b07d7
             <message>
               <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: '2401:4900:16b9:8acc:a094:b8f8:962f:283%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:79c3:2612:239f:3c7f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5288, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ee7116a5-130b-514f-8318-b609247b1c71]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6645, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b2c656c8-f615-2342-b504-d7e6f0513d01]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: '2401:4900:16b9:8acc:a094:b8f8:962f:283%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:79c3:2612:239f:3c7f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5288, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ee7116a5-130b-514f-8318-b609247b1c71
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6645, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b2c656c8-f615-2342-b504-d7e6f0513d01
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -126,7 +126,7 @@ Session ID: ee7116a5-130b-514f-8318-b609247b1c71
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:27)
+	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,7 +157,7 @@ Session ID: ee7116a5-130b-514f-8318-b609247b1c71
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@3ac42916]" name="test1" duration-ms="20970" started-at="2020-06-16T00:28:22Z" data-provider="DataProviderMethod" finished-at="2020-06-16T00:28:43Z">
+        <test-method status="FAIL" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@17046283]" name="test1" duration-ms="13705" started-at="2020-06-16T17:16:59Z" data-provider="DataProviderMethod" finished-at="2020-06-16T17:17:13Z">
           <params>
             <param index="0">
               <value>
@@ -174,18 +174,18 @@ Session ID: ee7116a5-130b-514f-8318-b609247b1c71
             <message>
               <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: '2401:4900:16b9:8acc:a094:b8f8:962f:283%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:79c3:2612:239f:3c7f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5293, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6b34898d-cf0f-704a-a646-11567fefeafa]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6650, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dda48433-0b5e-0b4d-ae21-8cd1af1338ef]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Munnas-MacBook-Pro.local', ip: '2401:4900:16b9:8acc:a094:b8f8:962f:283%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+System info: host: 'Munnas-MacBook-Pro.local', ip: 'fd14:9d09:fb92:c500:79c3:2612:239f:3c7f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5293, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6b34898d-cf0f-704a-a646-11567fefeafa
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6650, moz:profile: /var/folders/5x/dm3zp01x5vg..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dda48433-0b5e-0b4d-ae21-8cd1af1338ef
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -193,7 +193,7 @@ Session ID: 6b34898d-cf0f-704a-a646-11567fefeafa
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:27)
+	at bankAut.Guru99Bank_ext.SS1_Login.test1(SS1_Login.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -224,7 +224,7 @@ Session ID: 6b34898d-cf0f-704a-a646-11567fefeafa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="closeDriverAndClearCookies()[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@3ac42916]" name="closeDriverAndClearCookies" is-config="true" duration-ms="4177" started-at="2020-06-16T00:28:43Z" finished-at="2020-06-16T00:28:47Z">
+        <test-method status="PASS" signature="closeDriverAndClearCookies()[pri:0, instance:bankAut.Guru99Bank_ext.SS1_Login@17046283]" name="closeDriverAndClearCookies" is-config="true" duration-ms="8035" started-at="2020-06-16T17:17:13Z" finished-at="2020-06-16T17:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverAndClearCookies -->
